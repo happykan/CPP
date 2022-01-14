@@ -1,4 +1,4 @@
-//Basics and Printing Your Initials 6 pts
+//Basics and Printing Your Initials Happy Kan 6 pts
 #include <iostream>
 int main ()
 {
