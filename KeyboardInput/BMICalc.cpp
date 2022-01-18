@@ -23,7 +23,7 @@ int main ()
 
     std::cout <<"Your weight in pounds: \n";
     cin >> weight;
-    BMI = (weight*0.453592)/((height_2*12*0.0254)+(height*0.0254)*(height_2*12*0.0254)+(height*0.0254));
+    BMI = (weight*0.453592)/((height_2*12*0.0254)+(height*0.0254)*);
 
     std::cout <<"Your BMI is " << BMI <<endl;
     return 0;
