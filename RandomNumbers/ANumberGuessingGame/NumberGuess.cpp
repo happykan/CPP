@@ -12,11 +12,11 @@ int main ()
     cin >> guess;
     int num=rand()%10+1;
     cout <<"\n";
-    if (num=guess)
+    if (num==guess)
     {
         cout <<"That's right! My secret number was " << num <<endl;
     }
-    else if (num!=guess)
+    else
     {
         cout <<"Sorry, but I was really thinking of " << num <<endl;
     }
