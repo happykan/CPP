@@ -16,7 +16,7 @@ int main ()
     {
         cout <<"That's right! My secret number was " << num <<endl;
     }
-    else
+    else if (num!=guess)
     {
         cout <<"Sorry, but I was really thinking of " << num <<endl;
     }
