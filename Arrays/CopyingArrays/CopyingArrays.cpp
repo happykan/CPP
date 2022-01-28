@@ -1,4 +1,4 @@
-Arrays Copying Arrays 55 pts Happy Kan
+//Arrays Copying Arrays 55 pts Happy Kan
 #include <iostream>
 #include <string>
 #include <stdlib.h>
@@ -16,6 +16,15 @@ int main ()
         arrb[i] = randomnumber;
     }
     arr[9] = -7;
-    cout <<"Array 1: " <<arr
+    cout <<"Array 1: ";
+    for(int i=0;i<10;i++)
+    {
+        cout<<arr[i]<<"  ";
+    }
+    cout << "\nArray 2: ";
+    for(int i=0;i<10;i++)
+    {
+        cout<<arrb[i]<<"  ";
+    }
     return 0;
 }
