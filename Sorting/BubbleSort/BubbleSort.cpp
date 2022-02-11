@@ -20,23 +20,23 @@ int main()
     {
         cout << arr[i]<<" ";
     }
-    cout <<endl;
+    cout << "test here:"<<endl;
 
-    for (int i=0; i<size; i++)
+    for(int m=0; m<size; m++)
     {
-        for(int j=0; j<size; j++)
+        for(int n=0; n<size; n++)
         {
-            if(arr[j]>arr[j+1])
+            if(arr[n]>arr[n+1])
             {
-                int temp = arr[j];
-                arr[j] = arr[j+i];
-                arr[j+i] = temp;
+                int temp = arr[n];
+                arr[n] = arr[n+1];
+                arr[n+1] = temp;
             }
         }
     }
-    cout <<"\n";
+    cout <<"something here"<<endl;
     cout <<"Array after sorting: "<<endl;
-    for(int i=0; i<size-1; i++)
+    for(int i=0; i<size; i++)
     {
         cout<<arr[i]<<" ";
     }
