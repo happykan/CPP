@@ -17,7 +17,14 @@ void myFunction (int a, int b, int n)
 }
 int main ()
 {
-    myFunction(3, 5, 1000);
+    int a, b;
+    cout <<"1st multiple: ";
+    cin >>a;
+    cout <<endl;
+    cout <<"2nd multiple: ";
+    cin >>b;
+    cout <<endl;
+    myFunction(a, b, 100);
     cout <<endl;
     return 0;
 }
