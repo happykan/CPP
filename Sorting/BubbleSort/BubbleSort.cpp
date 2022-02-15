@@ -20,7 +20,7 @@ int main()
     {
         cout << arr[i]<<" ";
     }
-    cout << "test here:"<<endl;
+    cout <<endl;
 
     for(int m=0; m<size; m++)
     {
@@ -34,7 +34,7 @@ int main()
             }
         }
     }
-    cout <<"something here"<<endl;
+    cout <<endl;
     cout <<"Array after sorting: "<<endl;
     for(int i=0; i<size; i++)
     {
