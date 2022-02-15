@@ -17,14 +17,17 @@ void myFunction (int a, int b, int n)
 }
 int main ()
 {
-    int a, b;
+    int a, b, n;
     cout <<"1st multiple: ";
     cin >>a;
     cout <<endl;
     cout <<"2nd multiple: ";
     cin >>b;
     cout <<endl;
-    myFunction(a, b, 100);
+    cout <<"limit: ";
+    cin >>n;
+    cout <<endl;
+    myFunction(a, b, n);
     cout <<endl;
     return 0;
 }
