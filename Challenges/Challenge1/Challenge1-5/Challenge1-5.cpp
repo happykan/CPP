@@ -1,36 +1,25 @@
 //Challenge #1-5
 #include <iostream>
 using namespace std;
-void myFunction (int a, int b, int l, int n)
+int main()
 {
-    int sum = 0;
-    for (int i=l; i<n; i++)
+    int sum=0,a,b,minL,maxL;
+    cout<<"1st multiple: ";
+    cin>>a;
+    cout<<"2nd multiple: ";
+    cin>>b;
+    cout<<"From: ";
+    cin>>minL;
+    cout<<"To: ";
+    cin>>maxL;
+    for(int i=minL; i<maxL; i++)
     {
-        if (i % a==0 || i%b ==0)
+        if(i%a==0 or i%b==0)
         {
-            sum = sum+i;
+            sum+=i;
         }
-        
-    }
-    cout <<sum;
 
-}
-int main ()
-{
-    int a, b, n, l;
-    cout <<"1st multiple: ";
-    cin >>a;
-    cout <<endl;
-    cout <<"2nd multiple: ";
-    cin >>b;
-    cout <<endl;
-    cout <<"limit: ";
-    cin >>n;
-    cout <<endl;
-    cout <<"minimum: ";
-    cin >>l;
-    cout <<endl;
-    myFunction(a, b, l, n);
-    cout <<endl;
+    }
+    cout<<sum;
     return 0;
 }
