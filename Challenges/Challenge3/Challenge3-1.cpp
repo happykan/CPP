@@ -5,7 +5,8 @@ using namespace std;
 int sum;
 int findSum(int n)
 {
-    for (int i=2; i<355000; i++)
+    int t = 0;
+    for (int i=2; i<10000; i++)
     {
         sum=0;
         int num=1;
@@ -19,16 +20,17 @@ int findSum(int n)
         }
         if(sum == i)
         {
+            t+=i;
             cout<<sum<<endl;
         }
         //else sum=0;
     }
-    return sum;
+    return t;
 }
 int main()
 {
     int a= findSum(4);
-    cout<<"Sum are: = "<<a<<endl;;
+    cout<<"Sum = "<<a<<endl;;
     return 0;
 }
 
