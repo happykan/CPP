@@ -97,10 +97,12 @@ int main()
     else if(std1.getGPA() > std2.getGPA())
     {
         cout<<"Student1 grade is higher than student2."<<endl;
+        cout<<((std1.getGPA())-(std2.getGPA()))<<endl;
     }
     else
     {
         cout<<"Student2 grade is higher than student1."<<endl;
+        cout<<((std2.getGPA())-(std1.getGPA()))<<endl;
     }
 
 
