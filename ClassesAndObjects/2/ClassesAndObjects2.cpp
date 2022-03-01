@@ -2,6 +2,7 @@
 #include <iostream>
 #include <list>
 #include <cmath>
+#include <ctime>
 using namespace std;
 class Triangle
 {
@@ -21,7 +22,6 @@ class Triangle
         side2 = sqrt(((x3-x3)*(x3-x2))+((y3-y2)*(y3-y2)));
         side3 = sqrt(((x3-x1)*(x3-x1))+((y3-y1)*(y3-y1)));
         area = sqrt(((side1+side2+side3)/2)*(((side1+side2+side3)/2)-side1)*(((side1+side2+side3)/2)-side2)*(((side1+side2+side3)/2)-side3));
-        //area = sqrt((sqrt((side1+side2+side3)/2))((sqrt((side1+side2+side3)/2))-side1)((sqrt((side1+side2+side3)/2))-side2)((sqrt((side1+side2+side3)/2))-side3));
     }
     void GetInfo()
     {
@@ -39,7 +39,15 @@ class Triangle
 };
 int main()
 {
-    Triangle Trig_1(0,0,3,0,3,4);
+    srand(time(NULL));
+    int x__1, x__2, x__3, y__1, y__2, y__3;
+    x__1 = rand() % 100+1;
+    x__2 = rand() % 100+1;
+    x__3 = rand() % 100+1;
+    y__1 = rand() % 100+1;
+    y__2 = rand() % 100+1;
+    y__3 = rand() % 100+1;
+    Triangle Trig_1(x__1,x__2,x__3,y__1,y__2,y__3);
     Trig_1.GetInfo();
     return 0;
 }
