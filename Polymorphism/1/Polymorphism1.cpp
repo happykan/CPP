@@ -1,3 +1,4 @@
+//Polymorphism 1
 #include <iostream>
 using namespace std;
 
@@ -5,13 +6,13 @@ class findArea{
     public:
         findArea(){}
         findArea(int x){
-            cout<<x;
+            cout<<x*x<<endl;
         }
         findArea(int w, int h){
             cout<<h*w<<endl;
         }
         findArea(int b1, int b2, int h){
-            cout<<b1*b2<<endl;
+            cout<<((b1+b2)*h)/2<<endl;
         }
 
 };
