@@ -18,26 +18,35 @@ int main ()
         cout<<*(p+i)<<" ";
     }
     int *maxnum = p;
+   // int l;
+    int *maxL;
     for(int j=0; j<10; j++)
     {
-        if(*maxnum<*(p+j))
+        //if(*maxnum<*(p+j))
+        if(*(p+j) > *maxnum)
         {
             *maxnum = *(p+j);
+            *maxL = j;
         }else
         {
             *maxnum = *maxnum;
         }
     }
     cout<<endl;
-    cout<<"Max: "<<*maxnum;
+    cout<<"Max: "<<*maxnum<<"at " <<*maxL;
     cout<<endl;
-    for(int g=0; g<10; g++)
-    {
-        if(arr[g] == *maxnum)
-        {
-            cout<<*maxnum<<" is in "<<g<<endl;
-        }
-    }
-    return 0;
+    
+    // for(int g=0; g<10; g++)
+    // {
+    //     if(*maxnum< *(p+g))
+    //     {
+    //         *maxnum = *(p+g);
+    //         *maxL = g;
+
+    //     }
+         
+    // }
+    // cout<<"Location"<<*maxL;
+ return 0;
 
 }
