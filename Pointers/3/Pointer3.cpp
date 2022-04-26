@@ -17,7 +17,7 @@ void print2D(int arr[M][N]){
 void print2DP(int *arr, int r, int c){ //
     for (int i = 0; i < r; i++){ //use for loop to run through row
       for (int j = 0; j < c; j++){ //use for loop to run thorugh column
-        cout<<*(arr+i+j)<<" "; //print out the 2D array (different from *(arr+i)+j)
+        cout<<  *(arr+i+j)  <<" "; //print out the 2D array (different from *(arr+i)+j)
       }cout<<endl;
     }
 }
